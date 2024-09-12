@@ -1,0 +1,83 @@
+.active {
+  background-color: #eb3678 !important;
+}
+
+.dbl-1,
+.dbl-2,
+.dbl-3,
+.dbl-4,
+.dbl-5,
+#icon {
+  position: relative;
+  transition: all 0.2s;
+}
+.dbl-5 {
+  display: inline-block;
+}
+.dbl-1::before {
+  content: "Zaw Min Thu";
+  position: absolute;
+  top: 150%;
+  left: 0;
+  color: #eb3678;
+}
+.dbl-2::before {
+  content: "Home";
+  position: absolute;
+  top: 150%;
+  left: 15%;
+  color: #eb3678;
+}
+.dbl-3::before {
+  content: "Work";
+  position: absolute;
+  top: 150%;
+  left: 15%;
+  color: #eb3678;
+}
+.dbl-4::before {
+  content: "About";
+  position: absolute;
+  top: 150%;
+  left: 15%;
+  color: #eb3678;
+}
+.dbl-5::before {
+  content: "Learn more";
+  position: absolute;
+  top: 150%;
+  right: 0%;
+  color: #eb3678;
+}
+.parent:hover {
+  .dbl-1 {
+    transform: translateY(-150%);
+  }
+}
+.parent-2:hover {
+  .dbl-2 {
+    transform: translateY(-132%);
+  }
+}
+.parent-3:hover {
+  .dbl-3 {
+    transform: translateY(-132%);
+  }
+}
+.parent-4:hover {
+  .dbl-4 {
+    transform: translateY(-132%);
+  }
+}
+.parent-5 {
+  display: inline-block;
+}
+.parent-5:hover {
+  .dbl-5 {
+    transform: translateY(-150%);
+  }
+  #icon {
+    display: inline-block;
+    transform: rotate(359deg);
+  }
+}

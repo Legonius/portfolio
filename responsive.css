@@ -1,0 +1,26 @@
+@media screen and (max-width: 575px) {
+  body {
+    padding: 0 5px !important;
+  }
+  main {
+    padding-top: 7rem;
+  }
+  #bor {
+    border: #f04a4a solid 1.5px;
+  }
+  .frame {
+    padding: 5px;
+  }
+  .sm-font {
+    font-size: 0.9rem !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  body {
+    padding: 0 2rem;
+  }
+  .frame {
+    max-width: 42rem;
+    max-height: 42rem;
+  }
+}
