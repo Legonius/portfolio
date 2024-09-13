@@ -6,6 +6,16 @@
   color: white;
   /* user-select: none; */
 }
+/* Hide scrollbar for modern browsers */
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 body {
   background-color: rgb(17, 16, 16) !important;
   width: 100dvw;
