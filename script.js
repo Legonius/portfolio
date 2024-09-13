@@ -77,7 +77,7 @@ gsap.to(".cc", {
   scrollTrigger: {
     trigger: "#bio",
     triggerEnd: "center",
-    start: "-100% center",
+    start: "-50% center",
     end: "bottom center",
     scrub: 2,
   },
