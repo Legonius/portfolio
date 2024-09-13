@@ -60,6 +60,29 @@ window.addEventListener("scroll", () => {
 
 //Navbar Show/Hide script end
 
+//Bio Letter Gsap setting
+
+const letter = document.getElementById("bio-letter");
+let char =
+  `Creative and adaptable Web Developer with strong proficiency in HTML, CSS, JavaScript, and React.js, seeking an opportunity to contribute and grow in a dynamic team environment as a junior developer or intern. Passionate about building responsive and user-friendly web applications while continuously learning and expanding skill sets.`.split(
+    ""
+  );
+char.forEach((c) => {
+  letter.innerHTML += `<span class="cc">${c}</span>`;
+});
+
+gsap.to(".cc", {
+  stagger: 0.1,
+  color: "white",
+  scrollTrigger: {
+    trigger: "#bio",
+    triggerEnd: "center",
+    start: "-100% center",
+    end: "bottom center",
+    scrub: 2,
+  },
+});
+
 //Experience Section Start
 
 const feExp = document.getElementById("fe-exp");

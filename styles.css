@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   color: white;
-  user-select: none;
+  /* user-select: none; */
 }
 body {
   background-color: rgb(17, 16, 16) !important;
@@ -98,6 +98,10 @@ img {
   filter: drop-shadow(
     -40px 10px 20px rgba(0, 0, 0, 0.5)
   ); /* Drop shadow properties */
+}
+
+.cc {
+  color: gray;
 }
 
 /* Gradient Animation of Picture Background */
