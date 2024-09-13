@@ -60,7 +60,7 @@ window.addEventListener("scroll", () => {
 
 //Navbar Show/Hide script end
 
-//Bio Letter Gsap setting
+//Bio Letter Gsap setting Start
 
 const letter = document.getElementById("bio-letter");
 let char =
@@ -82,6 +82,7 @@ gsap.to(".cc", {
     scrub: 2,
   },
 });
+//Bio Letter Gsap setting End
 
 //Experience Section Start
 
@@ -113,3 +114,5 @@ gsap.from(".l1", {
     end: "center center",
   },
 });
+
+//Experience Section Start

@@ -209,8 +209,9 @@ img {
 .move:hover span {
   -webkit-animation-play-state: paused;
 }
-.move .item1::after,
-.move .item2::after {
+/* .move .item1::after,
+.move .item2::after, */
+.move span::after {
   content: "";
   position: absolute;
   width: 10px;
