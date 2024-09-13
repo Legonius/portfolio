@@ -92,3 +92,24 @@ const otExp = document.getElementById("ot-exp");
 feExp.textContent = `Learning Experience: ${exp(5, 3, 2024)}`;
 mernExp.textContent = `Learning Experience: ${exp(14, 6, 2024)}`;
 otExp.textContent = `Learning Experience: ${exp(5, 11, 2018)}`;
+
+gsap.from(".exp-letter", {
+  color: "black",
+  textShadow: "0 0 10px white",
+  scrollTrigger: {
+    trigger: feExp,
+    start: "-600% 80%",
+    end: "center center",
+    scrub: 2,
+  },
+});
+
+gsap.from(".l1", {
+  color: "white",
+  stagger: 0.5,
+  scrollTrigger: {
+    trigger: feExp,
+    start: "-200% center",
+    end: "center center",
+  },
+});
